@@ -43,6 +43,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='mediafile',
             name='library',
-            field=models.ForeignKey(related_name='files', to='mezzanine_file_collections.MediaLibrary'),
+            field=models.ForeignKey(related_name='files', to='mezzanine_file_collections.MediaLibrary',on_delete=models.DO_NOTHING,),
         ),
     ]
