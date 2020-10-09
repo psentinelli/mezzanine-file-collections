@@ -1,5 +1,6 @@
 from string import punctuation
 #from urllib import unquote
+from urllib.parse import unquote
 
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
